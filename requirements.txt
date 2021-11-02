@@ -1,1 +1,2 @@
 Django==3.2
+pyopendota==0.2.0
