@@ -1,2 +1,3 @@
 Django==3.2
 pyopendota==0.2.0
+django-autoslug==1.9.8
