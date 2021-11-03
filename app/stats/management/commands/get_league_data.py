@@ -2,7 +2,6 @@ import json
 import logging
 import os
 import time
-from urllib.parse import urlsplit
 
 import opendota
 from django.conf import settings

@@ -1,7 +1,6 @@
 import json
 import logging
 import os
-from urllib.parse import urlsplit
 
 import opendota
 from django.conf import settings
@@ -11,7 +10,7 @@ from django.core.management import BaseCommand
 class Command(BaseCommand):
     def handle(self, *args, **options):
         client = opendota.OpenDota(
-            data_dir=os.path.join(settings.BASE_DIR, 'data', 'opendota'))
+            data_dir=os.path.join(settings.BASE_DIR, 'data', 'dota2'))
 
         url = "/leagues"
         filename = "leagues.json"
